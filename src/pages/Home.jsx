@@ -1,5 +1,3 @@
-import Footer from "../components/Footer";
-
 const sections = [
   {
     title: "Community",
@@ -28,7 +26,7 @@ const sections = [
   },
 ];
 
-{/* home animation */}
+// title animation
 export default function Home() {
   const title = "Welcome to sunshine tower";
   const letters = title.split("");
@@ -42,7 +40,7 @@ export default function Home() {
               <span
                 key={`${letter}-${index}`}
                 className="inline-block motion-preset-bounce motion-delay-(--delay)"
-                style={{ "--delay": `${index * 100}ms` }}
+                style={{ "--delay": `${index * 50}ms` }}
               >
                 {letter === " " ? "\u00A0" : letter}
               </span>
@@ -55,8 +53,8 @@ export default function Home() {
       {sections.map((section, index) => (
         <section
           key={section.title}
-          className="mx-auto mb-8 max-w-3xl rounded-4xl bg-blue-300 p-8 shadow-lg animate-fade-bounce"
-          style={{ animationDelay: `${index * 150}ms` }}
+          className="mx-auto mb-8 max-w-3xl rounded-4xl bg-blue-300 p-8 opacity-0 shadow-lg animate-bounce-in"
+          style={{ animationDelay: `${index * 230}ms` }}
         >
           <div className="flex flex-col items-center gap-6 md:flex-row md:items-center">
             <div className="w-full shrink-0 overflow-hidden rounded-2xl md:w-56">
