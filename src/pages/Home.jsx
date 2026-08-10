@@ -3,8 +3,7 @@ const sections = [
     title: "Community",
     image: "/images/Community.jpg",
     alt: "Community",
-    text:
-      "Welcome! Make new friends, jump into fun conversations, and hang out with the rest of the community.",
+    text: "Welcome! Make new friends, jump into fun conversations, and hang out with the rest of the community.",
   },
   {
     title: "Suites",
