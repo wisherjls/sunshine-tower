@@ -12,8 +12,6 @@ export default function About() {
         We are not affiliated or endorsed by Pixeltail Games.
       </p>
 
-      <Footer />
-
     </div>
   );
 }

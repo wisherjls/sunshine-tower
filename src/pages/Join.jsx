@@ -36,7 +36,6 @@ export default function Join() {
         We are not affiliated or endorsed by Pixeltail Games.
       </p>
 
-      <Footer />
     </div>
   );
 }
