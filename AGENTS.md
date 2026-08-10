@@ -18,3 +18,6 @@
 - Use descriptive names for variables and functions
 - Keep functions small and focused on a single task
 - Avoid deep nesting of components and functions
+
+- utilize tailwind css 
+- explain the reasoning behind the code and how the fix works

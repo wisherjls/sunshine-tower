@@ -17,6 +17,8 @@ export default function Navbar() {
             </Link>
             <Link
               to="https://discord.com/invite/mbeaVGpnXp"
+              target="_blank"
+              rel="noopener noreferrer"
               className="hover:text-blue-200 transition-colors font-medium"
             >
               Discord

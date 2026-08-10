@@ -19,6 +19,7 @@
     ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
   ],
   "cSpell.words": [
+    "larp",
     "Pixeltail",
     "Scienti",
     "sunshinetower",
