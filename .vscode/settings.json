@@ -17,5 +17,11 @@
   "tailwindCSS.experimental.classRegex": [
     ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
     ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ],
+  "cSpell.words": [
+    "Pixeltail",
+    "Scienti",
+    "sunshinetower",
+    "Sylveon"
   ]
 }

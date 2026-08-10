@@ -2,23 +2,16 @@ export default function Join() {
   return (
     <div className="max-w-4xl mx-auto py-16 px-6">
       <h1 className="text-4xl font-bold text-blue-800 mb-8 text-center">Join the Server</h1>
-      
+
       <section className="mb-8 text-center">
         <h2 className="text-2xl font-bold text-blue-700 mb-4">🖥️ Server Information</h2>
         <ul className="list-disc list-inside space-y-2 text-gray-700">
           <li><strong>Sunshine Tower</strong> - WIP</li>
           <li><strong>Sunshine Tower Classic</strong> - connect sunshinetower.org</li>
         </ul>
-        <div className="flex flex-wrap gap-4 mt-4 text-sm">
-          <a href="https://sunshinetower.org" className="text-blue-600 hover:underline">🌐 Website</a>
-          <a href="https://www.youtube.com/channel/UCaiRXidJGVY89n7wOW_shGA" className="text-blue-600 hover:underline">▶️ YouTube</a>
-          <a href="https://bsky.app/profile/sunshinetower.org" className="text-blue-600 hover:underline">🦋 Bluesky</a>
-          <a href="https://steamcommunity.com/groups/SunshineTower" className="text-blue-600 hover:underline">Steam Group</a>
-          <a href="https://discord.gg/mbeaVGpnXp" className="text-blue-600 hover:underline">Discord Invite</a>
-        </div>
       </section>
 
-      <section className="mb-8">
+      <section className="mb-8 justify-center flex flex-col items-center">
         <h2 className="text-2xl font-bold text-blue-700 mb-4">🔧 Helpful Fixes</h2>
         <ul className="list-disc list-inside space-y-2 text-gray-700">
           <li><a href="https://www.solsticegamestudios.com/fixmedia/" className="text-blue-600 hover:underline">YouTube Codec Fix</a> by Solstice Game Studios</li>
@@ -26,7 +19,7 @@ export default function Join() {
         </ul>
       </section>
 
-      <section className="mb-8">
+      <section className="mb-8 justify-center flex flex-col items-center">
         <h2 className="text-2xl font-bold text-blue-700 mb-4">⭐ Community Guides!</h2>
         <ul className="list-disc list-inside space-y-2 text-gray-700">
           <li>🔍 <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3021204481" className="text-blue-600 hover:underline">Smooth Detective Award</a> by Scienti[-] It's Dead</li>
@@ -40,6 +33,14 @@ export default function Join() {
       <p className="text-sm text-gray-500 text-center italic">
         We are not affiliated or endorsed by Pixeltail Games.
       </p>
+
+      <footer className="gap-4 mt-8 flex flex-wrap justify-center text-sm">
+        <a href="https://sunshinetower.org" className="text-blue-600 hover:underline">🌐 Website</a>
+        <a href="https://www.youtube.com/channel/UCaiRXidJGVY89n7wOW_shGA" className="text-blue-600 hover:underline">▶️ YouTube</a>
+        <a href="https://bsky.app/profile/sunshinetower.org" className="text-blue-600 hover:underline">🦋 Bluesky</a>
+        <a href="https://steamcommunity.com/groups/SunshineTower" className="text-blue-600 hover:underline">Steam Group</a>
+        <a href="https://discord.gg/mbeaVGpnXp" className="text-blue-600 hover:underline">Discord Invite</a>
+      </footer>
     </div>
   );
 }
