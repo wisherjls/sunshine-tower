@@ -39,8 +39,8 @@ export default function Home() {
             {letters.map((letter, index) => (
               <span
                 key={`${letter}-${index}`}
-                className="inline-block motion-preset-bounce motion-delay-(--delay)"
-                style={{ "--delay": `${index * 50}ms` }}
+                className="inline-block motion-opacity-in-0 motion-preset-bounce motion-delay-(--delay)"
+                style={{ "--delay": `${index * 180}ms` }}
               >
                 {letter === " " ? "\u00A0" : letter}
               </span>
@@ -53,8 +53,8 @@ export default function Home() {
       {sections.map((section, index) => (
         <section
           key={section.title}
-          className="mx-auto mb-8 max-w-3xl rounded-4xl bg-blue-300 p-8 opacity-0 shadow-lg animate-bounce-in"
-          style={{ animationDelay: `${index * 230}ms` }}
+          className="mx-auto mb-8 max-w-3xl rounded-4xl bg-blue-300 p-8 shadow-lg motion-opacity-in-0 motion-preset-bounce motion-delay-(--delay)"
+          style={{ "--delay": `${index * 230}ms` }}
         >
           <div className="flex flex-col items-center gap-6 md:flex-row md:items-center">
             <div className="w-full shrink-0 overflow-hidden rounded-2xl md:w-56">
