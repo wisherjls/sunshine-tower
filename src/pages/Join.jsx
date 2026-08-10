@@ -1,3 +1,5 @@
+import Footer from "../components/Footer";
+
 export default function Join() {
   return (
     <div className="max-w-4xl mx-auto py-16 px-6">
@@ -34,13 +36,7 @@ export default function Join() {
         We are not affiliated or endorsed by Pixeltail Games.
       </p>
 
-      <footer className="gap-4 mt-8 flex flex-wrap justify-center text-sm">
-        <a href="https://sunshinetower.org" className="text-blue-600 hover:underline">🌐 Website</a>
-        <a href="https://www.youtube.com/channel/UCaiRXidJGVY89n7wOW_shGA" className="text-blue-600 hover:underline">▶️ YouTube</a>
-        <a href="https://bsky.app/profile/sunshinetower.org" className="text-blue-600 hover:underline">🦋 Bluesky</a>
-        <a href="https://steamcommunity.com/groups/SunshineTower" className="text-blue-600 hover:underline">Steam Group</a>
-        <a href="https://discord.gg/mbeaVGpnXp" className="text-blue-600 hover:underline">Discord Invite</a>
-      </footer>
+      <Footer />
     </div>
   );
 }

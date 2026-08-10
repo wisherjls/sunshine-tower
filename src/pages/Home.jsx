@@ -1,3 +1,5 @@
+import Footer from "../components/Footer";
+
 const sections = [
   {
     title: "Community",
@@ -26,6 +28,7 @@ const sections = [
   },
 ];
 
+{/* home animation */}
 export default function Home() {
   const title = "Welcome to sunshine tower";
 
@@ -47,6 +50,7 @@ export default function Home() {
         </h1>
       </section>
 
+      {/* section cards */}
       {sections.map((section, index) => (
         <section
           key={section.title}
@@ -72,29 +76,7 @@ export default function Home() {
         </section>
       ))}
 
-      <footer className="mt-8 flex flex-wrap justify-center gap-4 text-sm">
-        <a href="https://sunshinetower.org" className="text-blue-600 hover:underline">
-          🌐 Website
-        </a>
-        <a
-          href="https://www.youtube.com/channel/UCaiRXidJGVY89n7wOW_shGA"
-          className="text-blue-600 hover:underline"
-        >
-          ▶️ YouTube
-        </a>
-        <a href="https://bsky.app/profile/sunshinetower.org" className="text-blue-600 hover:underline">
-          🦋 Bluesky
-        </a>
-        <a
-          href="https://steamcommunity.com/groups/SunshineTower"
-          className="text-blue-600 hover:underline"
-        >
-          Steam Group
-        </a>
-        <a href="https://discord.gg/mbeaVGpnXp" className="text-blue-600 hover:underline">
-          Discord Invite
-        </a>
-      </footer>
+      <Footer />
     </div>
   );
 }
