@@ -39,7 +39,7 @@ export default function Home() {
               <span
                 key={`${letter}-${index}`}
                 className="inline-block motion-opacity-in-0 motion-preset-bounce motion-delay-(--delay)"
-                style={{ "--delay": `${index * 180}ms` }}
+                style={{ "--delay": `${index * 80}ms` }}
               >
                 {letter === " " ? "\u00A0" : letter}
               </span>
@@ -53,7 +53,7 @@ export default function Home() {
         <section
           key={section.title}
           className="mx-auto mb-8 max-w-3xl rounded-4xl bg-blue-300 p-8 shadow-lg motion-opacity-in-0 motion-preset-bounce motion-delay-(--delay)"
-          style={{ "--delay": `${index * 230}ms` }}
+          style={{ "--delay": `${index * 280}ms` }}
         >
           <div className="flex flex-col items-center gap-6 md:flex-row md:items-center">
             <div className="w-full shrink-0 overflow-hidden rounded-2xl md:w-56">
