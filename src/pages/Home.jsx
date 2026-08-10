@@ -31,17 +31,18 @@ const sections = [
 {/* home animation */}
 export default function Home() {
   const title = "Welcome to sunshine tower";
+  const letters = title.split("");
 
   return (
     <div className="py-16 text-center">
       <section className="mb-8 text-blue-800">
-        <h1 className="mb-4 flex items-center justify-center gap-2 text-6xl font-bold">
+        <h1 className="mb-4 flex items-center justify-center gap-2 text-5xl font-bold text-blue-800">
           <span className="whitespace-pre">
-            {title.split("").map((letter, index) => (
+            {letters.map((letter, index) => (
               <span
                 key={`${letter}-${index}`}
-                className="inline-block animate-bounce"
-                style={{ animationDelay: `${index * 80}ms` }}
+                className="inline-block motion-preset-bounce motion-delay-(--delay)"
+                style={{ "--delay": `${index * 100}ms` }}
               >
                 {letter === " " ? "\u00A0" : letter}
               </span>
